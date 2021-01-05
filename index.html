@@ -12,6 +12,9 @@
   <link href="css/test.css" rel="stylesheet" />
   <style type="text/css">
     /* code css o day */
+    .table > thead {
+
+    }
   </style>
   <noscript>trinh duyet ko ho tro javascript</noscript>
 </head>
@@ -59,9 +62,62 @@
   </ol>
   <!-- HTML table -->
   <table width="100%" border="1" cellspacing="0" cellpadding="0">
-    <thead>
-      <tr></tr>
+    <thead bgcolor="green">
+      <tr>
+        <th>Ma SV</th>
+        <th>Ho Ten</th>
+        <th>Que quan</th>
+        <th>Nam sinh</th>
+        <th>Gioi tinh</th>
+        <th>SDT</th>
+        <th>Hoc bong</th>
+      </tr>
     </thead>
+    <tbody>
+      <tr>
+        <td align="center">113</td>
+        <td>Van teo</td>
+        <td rowspan="2">Ha Noi</td>
+        <td> 1999 </td>
+        <td> Nu</td>
+        <td>534645655</td>
+        <td>3000000</td>
+      </tr>
+      <tr>
+        <td>114</td>
+        <td>Van ty</td>
+        <!-- <td>Ha Noi</td> -->
+        <td> 1999 </td>
+        <td> Nam</td>
+        <td>5346456323</td>
+        <td>1000000</td>
+      </tr>
+      <tr>
+        <td>115</td>
+        <td>Van hoi</td>
+        <td>Ha Nam</td>
+        <td> 2000 </td>
+        <td> Nu</td>
+        <td>5346456323</td>
+        <td>2000000</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="6">Tong tien HB</td>
+        <td>6000000</td>
+      </tr>
+    </tfoot>
   </table>
+  <!-- HTML media -->
+  <img src="images/favicon.ico" width="300" height="300" alt="anh cua toi" />
+  <br/>
+  <audio src="media/test.mp3" autoloop loop controls autobuffer ></audio>
+  <br/>
+  <video src="media/test.mp4" autoloop loop controls autobuffer poster="images/favicon.ico"></video>
+  <!-- HTML Do hoa -->
+  <canvas></canvas>
+  <!-- HTML youtube -->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Yhmztp79PtM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>
