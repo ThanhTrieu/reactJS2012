@@ -1,0 +1,62 @@
+* {
+  /* reset CSS */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* id selector */
+/* #title {
+  color: red;
+} */
+
+/* class selector */
+
+/* HTML Selector */
+h1.title{color:blue;}.title {color: yellow;}
+
+/* attr selector */
+input[type='email'] {
+  border: 1px solid red;
+}
+input[class~='pass'] {
+  border: 1px solid blue;
+}
+input[class*='put'] {
+  border: 2px solid pink;
+}
+a[href$='org'] {
+  color: violet;
+}
+a[href^='https'] {
+  color: red;
+}
+a[class|='item'] {
+  color: yellow;
+}
+header.header > .nav {
+  width: 200px;
+  height: 100px;
+  background-color: pink;
+}
+/* header.header h2 ~ h3 {
+  color: red;
+} */
+/* h1,h2,h3,h4 {
+  color: orange;
+} */
+div.content > div.box + div.box-2 > div.child-1 ~ div.child-2 h1.text {
+  color: red;
+}
+div.pesudo :first-child {
+  color: red;
+}
+div.pesudo :last-child {
+  color: blueviolet;
+}
+div.pesudo :first-of-type {
+  color: yellow;
+}
+
+div.pesudo :last-of-type {
+  color: orange;
+}
