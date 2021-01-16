@@ -1,0 +1,44 @@
+div.box :only-child {
+  color: red;
+}
+input[class|='my']:focus {
+  width: 300px;
+  height: 30px;
+  border: 1px solid red;
+  outline: none;
+}
+input[type='checkbox']:checked {
+  width: 100px;
+  height: 100px
+}
+a.links:active {
+  color: yellow;
+}
+a.links:visited {
+  color: red;
+}
+a.links:link {
+  color: pink;
+}
+a.links:hover {
+  color: violet;
+}
+p.pesudo-element::first-letter {
+  font-size: 25px;
+  color: red;
+  font-weight: bold;
+}
+p.pesudo-element::first-line {
+  color: blue;
+}
+p.pesudo-element::before {
+  content: "JS"
+  /* content: url('../images/favicon.ico'); */
+}
+p.pesudo-element::after {
+  /* content: "JS" */
+  content: url('../images/favicon.ico');
+}
+p.pesudo-element::selection {
+  color: yellow;
+}
