@@ -21,3 +21,43 @@ body {
   --text-color: black;
   --hover-text-color: white;
 }
+a {
+  text-decoration: none;
+}
+.nav {
+  width: 20rem;
+  background-color: var(--bg-color);
+  margin-top: .5rem;
+  margin-left: 1.5rem;
+}
+.nav__item {
+  padding: 1rem 0rem 1rem .3rem;
+  border-bottom: thin solid black;
+  position: relative;
+}
+.nav__item:last-child {
+  border: none;
+}
+.nav__link {
+  color: var(--text-color);
+}
+.nav__item:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+.nav__item:hover > .nav__link {
+  color: var(--hover-text-color);
+}
+/* css menu dropdown */
+.nav__dropdown {
+  display: none;
+  width: 20rem;
+  background-color: var(--bg-color);
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border-left: thin solid black;
+}
+.nav__item:hover > .nav__dropdown {
+  display: block;
+}
