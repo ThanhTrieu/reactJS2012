@@ -1,0 +1,78 @@
+.container {
+  width: 980px;
+  margin: 0 auto;
+  border: 1px dotted orange;
+}
+.box {
+  width: 300px;
+  height: 200px;
+  border: 1px solid red;
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  /* overflow: auto; */
+  overflow-y: scroll;
+}
+.box-2 {
+  width: 300px;
+  height: 200px;
+  border: 1px solid blue;
+}
+.box-3 {
+  width: 300px;
+  height: 200px;
+  border: 1px solid yellow;
+  /* background: linear-gradient(to top left, red, yellow, blue, orange, violet);  */
+
+  background: -moz-linear-gradient(45deg, red, yellow, blue, orange, violet);
+  background: -webkit-linear-gradient(45deg, red, yellow, blue, orange, violet);
+  background: -o-linear-gradient(45deg, red, yellow, blue, orange, violet);
+  background: linear-gradient(45deg, red, yellow, blue, orange, violet);
+
+  /* transform: translate(100px, 200px); */
+  /* transform: rotate(60deg); */
+  /* transform: scale(1,2); */
+  /* -moz-transform: skew(65deg);
+  -webkit-transform: skew(65deg);
+  -o-transform: skew(65deg);
+  transform: skew(65deg); */
+
+  transition: all 10s ease-in-out 0s;
+  animation: myAnimation 10s ease-in-out 0s infinite alternate;
+  position: relative;
+}
+.box-3:hover {
+  transform: rotate(60deg);
+  opacity: 0;
+}
+@keyframes myAnimation {
+  from { bottom: 0px;}
+  to { bottom: 800px;}
+}
+
+.box, .box-2 {
+  float: left;
+} 
+.clear {
+  clear: both;
+}
+/* responsive */
+@media only screen and (min-width: 414px) and (max-width: 736px) {
+  .box, .box-2 {
+    float: none;
+  }
+  .box, .box-2, .box-3 {
+    width: 100%;
+  }
+  img {
+    display: none;
+  }
+}
+.content {
+  width: 300px;
+  border: 1px solid red;
+}
+.content__text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

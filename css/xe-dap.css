@@ -1,0 +1,80 @@
+/* setting css basic */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+input, textarea, button {
+  outline: none;
+  box-shadow: none;
+  font-family: 'Lato', sans-serif;
+}
+/* bien css */
+:root {
+  --primary: #64c29e;
+  --heading: #353738;
+  --text: #848789;
+  --bg-light: #f7f7f7;
+  --bg-white: #ffffff;
+  --bg-dark: #282f35; 
+  --border-input: #d3d7d9;
+  --input-text: #c8c8c8;
+}
+.wrapper {
+  max-width: 160rem;
+  margin: 0 auto;
+}
+.header {
+  min-height: 80rem;
+  background-image: url('../image/img-bg-header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+}
+.nav {
+  margin-top: 3.5rem;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__item {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  position: relative;
+}
+/* tao dau . cho li */
+.nav__item:first-child::after, .nav__item:nth-child(4)::after {
+  content: ".";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 2rem;
+}
+.nav__link {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--heading);
+}

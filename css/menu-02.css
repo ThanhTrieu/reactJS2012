@@ -68,3 +68,14 @@ body {
   width: 100%;
   min-height: 80rem;
 }
+@media only screen and (max-width: 736px) {
+  .nav__item {
+    display: none;
+  }
+  .nav__item:first-child {
+    display: block;
+  }
+  /* nav__item:hover {
+    display: block;
+  } */
+}
