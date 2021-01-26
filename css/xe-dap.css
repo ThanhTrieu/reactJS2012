@@ -78,3 +78,169 @@ input, textarea, button {
   font-size: 1.3rem;
   color: var(--heading);
 }
+/* feature */
+.feature__header {
+  padding: 11.7rem 1.5rem 14.1rem;
+  background-color: var(--bg-light);
+  text-align: center;
+}
+.feature__img-top {
+  margin: 0 auto 3.4rem;
+}
+.feature__heading {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--heading);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  letter-spacing: .5rem;
+}
+.feature__header-desc {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: var(--text);
+  max-width: 108rem;
+  margin: 0 auto;
+}
+.feature__item {
+  display: flex;
+  flex-flow: row wrap;
+  height: 60rem;
+  overflow: hidden;
+}
+.feature__item-img {
+  width: 67%;
+  position: relative;
+}
+.feature__item-content {
+  width: 33%;
+}
+.feature__item .img__bg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.feature__item .img__brand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.feature__item-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.feature__item-content-top {
+  padding: 0 6.5rem;
+  position: relative;
+  background-color: var(--bg-white);
+  height: 67%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.feature__item-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--text);
+  text-align: justify;
+  position: relative;
+  padding-bottom: 4rem;
+}
+.feature__item-content-bottom {
+  height: 33%;
+}
+/* doi vi tri trong li thu 2 */
+.feature__item:nth-child(2) .feature__item-img {
+  order: 2;
+}
+/* css cho li thu 3 */
+.feature__item:last-child > .feature__item-img {
+  width: 33%;
+}
+.feature__item:last-child > .feature__item-content {
+  width: 34%;
+}
+/* css arrow */
+.feature__item-content-top::after {
+  content: " ";
+  position: absolute;
+  bottom:0;
+  left: 50%;
+  width: 2rem;
+  height: 2rem;
+  z-index: 10;
+  transform: translate(-50%, 50%) rotate(45deg);
+  background-color: var(--bg-white);
+}
+.feature__item-text::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 5rem;
+  height: 1px;
+  background-color: #d7d7d7;
+  transform: translateX(-50%);
+}
+/* tweet */
+.tweet {
+  padding: 12.5rem 1.5em 6.8rem;
+  background-color: var(--bg-light);
+  text-align: center;
+}
+.tweet__icon {
+  color: #56c7ee;
+  font-size: 4rem;
+  margin-bottom: 3.5rem;
+}
+.tweet__heading {
+  font-size: 1.8rem;
+  margin-bottom:2.7rem;
+}
+.tweet__location, .tweet__author {
+  color: var(--heading);
+  font-weight: bold;
+}
+.tweet__time {
+  color: var(--text);
+  font-weight: 300;
+  padding-left: 1.5rem;
+  margin-left: 1.5rem;
+  position: relative;
+}
+.tweet__time::before {
+  content: "/";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.tweet__content {
+  font-size: 2.4rem;
+  line-height: 1.6;
+  color: var(--text);
+  font-style: italic;
+  max-width: 104rem;
+  margin: 0 auto 10rem;
+}
+.tweet_pagi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tweet_pagi-item {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--text);
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+.tweet_pagi .is-active {
+  background-color: var(--text);
+}
