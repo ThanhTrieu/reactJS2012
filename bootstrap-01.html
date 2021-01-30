@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap - 01</title>
+  <!-- su dung bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container-fluid border">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 bg-primary h-100">
+        <h1 class="text-info">bootstrap</h1>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 bg-success h-100">
+        <h1 class="text-danger">bootstrap</h1>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 bg-info h-100">
+        <h1>bootstrap</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3 col-xxl-6 offset-xxl-3 bg-info">
+        <h2> AAAAA </h2>
+      </div>
+    </div>
+    <!-- 4 cot  -->
+    <div class="row">
+      <div class="bg-primary col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+        <h3>Cot 1</h3>
+      </div>
+      <div class="bg-success col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+        <h3>Cot 2</h3>
+      </div>
+      <div class="bg-info col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+        <h3>Cot 3</h3>
+      </div>
+      <div class="bg-danger col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+        <h3>Cot 4</h3>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- su dung thu vien js -->
+  <script src="js/jquery-3.5.1.js" type="text/javascript"></script>
+  <script src="js/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>
